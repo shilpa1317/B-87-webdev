@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f0f2f5;
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    width: 280px;
+    padding: 40px;
+    text-align: center;
+    background: white;
+    border-radius: 19px;
+    
+    
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    
+    /* Flexbox */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* Hover transition */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.bio {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #0077b5; /* hover color */
+}
+
+/* simple pricing table */
+.Pricing-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 50px;
+    text-align: center;
+}
+.highlight {
+    border: 2px solid #24c50b;
+    transform: scale(1.1);
+}
+/* Button */
+button {
+    padding: 10px 20px;
+    border: none;
+    background: #79ed6c;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #e4641f;
+}
+ 
+ 
+
+
+
